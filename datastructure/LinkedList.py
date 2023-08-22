@@ -26,8 +26,25 @@ class LinkedList:
         print(listr)
 
 
+    def insert_at_end(self,data):
+        if self.head is None:
+            self.head = Node(data,None)
+            return
+
+        itr = self.head
+        while itr.next:
+            itr = itr.next
+
+        itr.next = Node(data,None)
+
+
+
+
+
 if __name__ == '__main__':
     li = LinkedList()
     li.insert_at_begining(5)
     li.insert_at_begining(10)
+    li.insert_at_end(15)
+    li.insert_at_end(20)
     li.print()
