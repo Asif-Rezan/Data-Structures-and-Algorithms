@@ -85,6 +85,14 @@ class LinkedList:
             count += 1
 
 
+    def insert_after_value(self,data_after,data_to_insert):
+
+        pass
+
+    def removed_by_value(self,data):
+        pass
+
+
 
 
 if __name__ == '__main__':
